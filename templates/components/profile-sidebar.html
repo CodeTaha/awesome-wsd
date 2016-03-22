@@ -1,0 +1,23 @@
+<div class="panel panel-awe panel-profile">
+    <h3>{{ user }}</h3>
+    <hr>
+    <img id="profileImg" src="" class="center-block"/>
+    <hr>
+    <div class="basic-info">
+        <i class="glyphicon glyphicon-user"></i>
+        {{ user.first_name }} {{ user.last_name }}
+    </div>
+    <div class="basic-info">
+        <i class="glyphicon glyphicon-envelope"></i>
+        {{ user.email }}
+    </div>
+
+    <div class="row stats">
+        <div class="col-xs-6"><div id="numGame" class="number"></div><div>Games</div></div>
+        <div class="col-xs-6"><div id="numSales" class="number"></div><div>Game sales</div></div>
+    </div>
+    <div class="row stats">
+        <div class="col-xs-6"><div id="numLikes" class="number"></div><div><i class="glyphicon glyphicon-thumbs-up"></i> Likes</div></div>
+        <div class="col-xs-6"><div id="numRevenue" class="number"></div><div><i class="glyphicon glyphicon-euro"></i> Revenue</div></div>
+    </div>
+</div>

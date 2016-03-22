@@ -1,0 +1,58 @@
+[
+{
+    "model": "awesomegames.genre",
+    "pk": 1,
+    "fields": {
+        "name": "Action"
+    }
+},
+{
+    "model": "awesomegames.genre",
+    "pk": 2,
+    "fields": {
+        "name": "Adventure"
+    }
+},
+{
+    "model": "awesomegames.genre",
+    "pk": 3,
+    "fields": {
+        "name": "Role-playing"
+    }
+},
+{
+    "model": "awesomegames.genre",
+    "pk": 4,
+    "fields": {
+        "name": "Simulation"
+    }
+},
+{
+    "model": "awesomegames.genre",
+    "pk": 5,
+    "fields": {
+        "name": "Sports"
+    }
+},
+{
+    "model": "awesomegames.genre",
+    "pk": 6,
+    "fields": {
+        "name": "Strategy"
+    }
+},
+{
+    "model": "awesomegames.genre",
+    "pk": 7,
+    "fields": {
+        "name": "Shooter"
+    }
+},
+{
+    "model": "awesomegames.genre",
+    "pk": 8,
+    "fields": {
+        "name": "Survival Horror"
+    }
+}
+]

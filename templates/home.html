@@ -1,0 +1,30 @@
+{% extends "layouts/two-cols-banner.html" %}
+{% load staticfiles %}
+
+{% block scope-lib %}
+    <script src="{% static "js/home.js" %}"></script>
+    <script src="{% static "js/common.js" %}"></script>
+    <script>
+        // Checks for usertype
+        userType(function(){
+            check_url();
+        });
+    </script>
+{% endblock %}
+
+{% block title %}All Games{% endblock %}
+
+{% block banner %}
+    <div class="banner">
+            <div class="container">
+                <div class="banner-caption">
+                    <h2 class="color-white">The most awesome gaming platform ever</h2>
+                    <p class="color-white">Upload developed games, buy games developed by others, Play and compete!</p>
+                </div>
+            </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div id="gameList" class="prevent_default"></div>
+{% endblock %}

@@ -1,0 +1,123 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% include "components/head.html" %}
+    <script src="{% static "js/register.js" %}"></script>
+</head>
+<body>
+{% block top-nav %}
+    {% include "components/top-nav.html" %}
+{% endblock %}
+
+<div class="top-space"></div>
+
+<div class="section-header bg-color-primary color-white" id="games">
+    <div class="container">
+        <h1 id="pageTitle">{% block title %}{% endblock %}</h1>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert awe-alert">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div class="row row-eq-height">
+            <div class="col-md-6">
+                <div class="form-wrap">
+                    <form class="awesome-form" id="register_dev" method="post" action="{% url 'register_developer' %}">
+                        <h2>Register as Developer</h2>
+                        {% csrf_token %}
+                        <div class="alert awe-alert hidden"></div>
+                        <div class="form-group">
+                            <input type="text" name="first_name" maxlength="100"
+                                   autocapitalize="off" placeholder="first name"
+                                   autocorrect="off" id="dev_firstname" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="last_name" maxlength="100"
+                                   autocapitalize="off" placeholder="last name"
+                                   autocorrect="off" id="dev_lastname" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" maxlength="100"
+                                   autocapitalize="off" placeholder="email"
+                                   autocorrect="off" id="dev_email" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" maxlength="100" name="username"
+                                   autocapitalize="off" placeholder="username"
+                                   autocorrect="off" id="dev_username" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" maxlength="100" name="password"
+                                   autocapitalize="off" placeholder="password"
+                                   autocorrect="off" autocomplete="new-password" id="dev_password" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-wrap disabled">
+                    <form class="awesome-form" id="register_plr" method="post" action="{% url 'register_player' %}">
+                        <h2>Register as Player</h2>
+                        {% csrf_token %}
+                        <div class="alert awe-alert hidden"></div>
+                        <div class="form-group">
+                            <input type="text" name="first_name" maxlength="100"
+                                   autocapitalize="off" placeholder="first name"
+                                   autocorrect="off" id="plr_firstname" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="last_name" maxlength="100"
+                                   autocapitalize="off" placeholder="last name"
+                                   autocorrect="off" id="plr_lastname" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" maxlength="100"
+                                   autocapitalize="off" placeholder="email"
+                                   autocorrect="off" id="plr_email" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" maxlength="100" name="username"
+                                   autocapitalize="off" placeholder="username"
+                                   autocorrect="off" id="plr_username" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" maxlength="100" name="password"
+                                   autocapitalize="off" placeholder="password"
+                                   autocorrect="off" autocomplete="new-password" id="plr_password" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    {% block footer %}{% include "components/footer.html" %}{% endblock %}
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% extends "layouts/two-cols-profile.html" %}
+{% load staticfiles %}
+
+{% block scope-lib %}
+    <script src="{% static "js/profile.js" %}"></script>
+    <script src="{% static "js/common.js" %}"></script>
+{% endblock %}
+
+{% block title %}
+    {% if user.developer %}
+    My games
+    <span class="pull-right">
+        <a id="btnAddGame" href="#" style="font-size: 75%"><i class="glyphicon glyphicon-plus"></i>Add new game</a>
+    </span>
+    {% endif %}
+{% endblock %}
+
+
+{% block content %}
+    {% if user.developer %}
+        <div id="message-wrap" class="panel panel-awe panel-screen">
+            <div class="message"></div>
+        </div>
+        {{ user.profile_image }}
+        <table class="table-summary">
+            <thead>
+            <tr>
+                <th class="hidden-xs">Code</th>
+                <th>Name</th>
+                <th class="hidden-xs">Price</th>
+                <th class="hidden-xs">Players</th>
+                <th class="hidden-xs">URL</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        {% csrf_token %}
+    {% else %}
+    {% endif %}
+{% endblock %}

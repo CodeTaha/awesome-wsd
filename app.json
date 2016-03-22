@@ -1,0 +1,8 @@
+{
+  "name": "AwesomeGames",
+  "description": "A game store",
+  "image": "heroku/python",
+  "repository": "git@git.niksula.hut.fi:kachwat1/wsdproject.git",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ]
+}

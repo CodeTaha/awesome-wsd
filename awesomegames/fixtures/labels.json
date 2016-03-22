@@ -1,0 +1,30 @@
+[
+{
+    "model": "awesomegames.label",
+    "pk": 1,
+    "fields": {
+        "name": "Editors' Top Picks"
+    }
+},
+{
+    "model": "awesomegames.label",
+    "pk": 2,
+    "fields": {
+        "name": "Hot"
+    }
+},
+{
+    "model": "awesomegames.label",
+    "pk": 3,
+    "fields": {
+        "name": "Promotion"
+    }
+},
+{
+    "model": "awesomegames.label",
+    "pk": 4,
+    "fields": {
+        "name": "Multiplayer"
+    }
+}
+]

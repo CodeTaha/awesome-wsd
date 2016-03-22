@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include "components/head.html" %}
+    {% block scope-lib %}{% endblock %}
+</head>
+<body>
+{% block banner %}{% endblock %}
+
+{% block top-nav %}
+    {% include "components/top-nav.html" %}
+{% endblock %}
+
+<div class="top-space"></div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                {% block left-sidebar %}
+                    {% include "components/profile-sidebar.html" %}
+                {% endblock %}
+            </div>
+            <div class="col-md-9">
+                <h3 id="pageTitle">{% block title %}{% endblock %}</h3>
+                <hr>
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    {% block footer %}{% include "components/footer.html" %}{% endblock %}
+</div>
+</body>
+</html>

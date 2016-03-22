@@ -1,0 +1,20 @@
+{% extends "layouts/two-cols.html" %}
+{% load staticfiles %}
+
+{% block scope-lib %}
+    <script src="{% static "js/home.js" %}"></script>
+    <script>
+        var flag = {{ flag }}
+
+        if(flag=="1"){
+            $("#pageTitle").remove();
+            $("#pageTitle").append("Congratulations on buying the game");
+        }
+    </script>
+{% endblock %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+    <div id="gameList" class="prevent_default"></div>
+{% endblock %}

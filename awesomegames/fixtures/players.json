@@ -1,0 +1,17 @@
+[
+{
+    "model": "awesomegames.player",
+    "pk": 5,
+    "fields": {}
+},
+{
+    "model": "awesomegames.player",
+    "pk": 6,
+    "fields": {}
+},
+{
+    "model": "awesomegames.player",
+    "pk": 7,
+    "fields": {}
+}
+]

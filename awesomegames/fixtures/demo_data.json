@@ -1,0 +1,764 @@
+[
+  {
+    "model": "awesomegames.genre",
+    "pk": 1,
+    "fields": {
+      "name": "Action"
+    }
+  },
+  {
+    "model": "awesomegames.genre",
+    "pk": 2,
+    "fields": {
+      "name": "Adventure"
+    }
+  },
+  {
+    "model": "awesomegames.genre",
+    "pk": 3,
+    "fields": {
+      "name": "Role-playing"
+    }
+  },
+  {
+    "model": "awesomegames.genre",
+    "pk": 4,
+    "fields": {
+      "name": "Simulation"
+    }
+  },
+  {
+    "model": "awesomegames.genre",
+    "pk": 5,
+    "fields": {
+      "name": "Sports"
+    }
+  },
+  {
+    "model": "awesomegames.genre",
+    "pk": 6,
+    "fields": {
+      "name": "Strategy"
+    }
+  },
+  {
+    "model": "awesomegames.genre",
+    "pk": 7,
+    "fields": {
+      "name": "Shooter"
+    }
+  },
+  {
+    "model": "awesomegames.genre",
+    "pk": 8,
+    "fields": {
+      "name": "Survival Horror"
+    }
+  },
+  {
+    "model": "awesomegames.label",
+    "pk": 1,
+    "fields": {
+      "name": "Editors' Top Picks"
+    }
+  },
+  {
+    "model": "awesomegames.label",
+    "pk": 2,
+    "fields": {
+      "name": "Hot"
+    }
+  },
+  {
+    "model": "awesomegames.label",
+    "pk": 3,
+    "fields": {
+      "name": "Promotion"
+    }
+  },
+  {
+    "model": "awesomegames.label",
+    "pk": 4,
+    "fields": {
+      "name": "Multiplayer"
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 1,
+    "fields": {
+      "title": "Drag Racing",
+      "code": "001",
+      "game_developer": 2,
+      "price": "5.99",
+      "description": "A classic yet awesome drag racing game that can be addictive. Challenge other players in multiplayer mode.",
+      "pub_date": "2016-01-09T15:00:33.257Z",
+      "image_url": "http://moonapk.com/wp-content/uploads/2015/07/Drag-Racing-1.6.31-Apk.jpg",
+      "thumbnail_url": "http://moonapk.com/wp-content/uploads/2015/07/Drag-Racing-1.6.31-Apk.jpg",
+      "game_url": "http://webcourse.cs.hut.fi/example_game.html",
+      "likes": 54,
+      "players": [
+        31
+      ],
+      "genres": [
+        4,
+        5
+      ],
+      "labels": [
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 2,
+    "fields": {
+      "title": "Flappy Bird 2.0",
+      "code": "002",
+      "game_developer": 3,
+      "price": "7.99",
+      "description": "A challenging game that requires your total focus and quick reaction.",
+      "pub_date": "2016-01-09T15:03:25.385Z",
+      "image_url": "http://happywheelsaz.com/datacenter/imgs/flappy-bird.jpg",
+      "thumbnail_url": "http://happywheelsaz.com/datacenter/imgs/flappy-bird.jpg",
+      "game_url": "http://happywheelsaz.com/datacenter/imgs/flappy-bird.jpg",
+      "likes": 99,
+      "players": [
+        31
+      ],
+      "genres": [
+        2
+      ],
+      "labels": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 3,
+    "fields": {
+      "title": "Card Wars",
+      "code": "003",
+      "game_developer": 2,
+      "price": "2.99",
+      "description": "Floop the Pig! It\u2019s Adventure Time CARD WARS! Play the game inspired by the Adventure Time episode, \u201cCard Wars\u201d! Summon creatures and cast spells to battle your way to victory.",
+      "pub_date": "2016-02-11T15:07:24.958Z",
+      "image_url": "https://lh3.googleusercontent.com/zMuG-o8oySe3enwsYBjYfjxV6IDd2A_nINFD3cLGHlmrsPS-stoURMyIoKlEldL_3IuH=h310-rw",
+      "thumbnail_url": "https://lh3.googleusercontent.com/YR5VNRdunguUHzgIfnHz481g4ILCKsEYb-g-BLb-NRA3FZilEQ00r4g06qMHd2SLrFU=w300-rw",
+      "game_url": "https://lh3.googleusercontent.com/YR5VNRdunguUHzgIfnHz481g4ILCKsEYb-g-BLb-NRA3FZilEQ00r4g06qMHd2SLrFU=w300-rw",
+      "likes": 0,
+      "players": [],
+      "genres": [
+        1
+      ],
+      "labels": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 4,
+    "fields": {
+      "title": "Fruit Ninja",
+      "code": "004",
+      "game_developer": 4,
+      "price": "1.59",
+      "description": "Slice fruit, don\u2019t slice bombs \u2013 that is all you need to know to get started with the addictive Fruit Ninja action!\r\nFrom there, explore the nuances of Classic, Zen and the fan favorite Arcade mode to expand your skills. Slice for a high score, use powerups and special bananas to maximum effect, and go crazy on the multi-slice Pomegranate.",
+      "pub_date": "2016-02-22T10:02:58.082Z",
+      "image_url": "https://lh3.googleusercontent.com/OYWBqDzvXBSYf_iMB6Yo58VoeJjXI_iM1Rwz6XoZfwIxy2jqFInsBlLRXiCTSdnbJ6s=h900-rw",
+      "thumbnail_url": "https://lh3.googleusercontent.com/w4MXonD3mBVlmuZ1mPfpGHj3jBDimbI78W4vJOZchhS3Tv3bLpmSwwgc-DQy9gsbKUI=w300-rw",
+      "game_url": "https://lh3.googleusercontent.com/OYWBqDzvXBSYf_iMB6Yo58VoeJjXI_iM1Rwz6XoZfwIxy2jqFInsBlLRXiCTSdnbJ6s=h900-rw",
+      "likes": 3,
+      "players": [
+        32
+      ],
+      "genres": [
+        1,
+        2
+      ],
+      "labels": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 5,
+    "fields": {
+      "title": "Grand Theft Auto: San Andreas",
+      "code": "005",
+      "game_developer": 3,
+      "price": "6.99",
+      "description": "Five years ago, Carl Johnson escaped from the pressures of life in Los Santos, San Andreas, a city tearing itself apart with gang trouble, drugs and corruption. Where filmstars and millionaires do their best to avoid the dealers and gangbangers.",
+      "pub_date": "2016-02-22T10:09:23.630Z",
+      "image_url": "https://lh5.ggpht.com/ryUZTZkIwXI1ULhlZTykmDvRIK_58xI4IvDUMRh7OHpmp4i9XjIs9D1j9K1mKYvx6Q=h900-rw",
+      "thumbnail_url": "https://lh3.ggpht.com/7TIN98hL2n_Smkog8C8KuKb3w01_mnuyjkmajmZfR4PyGOoJOZYv3D18VSA_kvzOnns=w300-rw",
+      "game_url": "https://lh5.ggpht.com/ryUZTZkIwXI1ULhlZTykmDvRIK_58xI4IvDUMRh7OHpmp4i9XjIs9D1j9K1mKYvx6Q=h900-rw",
+      "likes": 7,
+      "players": [],
+      "genres": [
+        2,
+        5
+      ],
+      "labels": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 6,
+    "fields": {
+      "title": "Time Mysteries 3",
+      "code": "006",
+      "game_developer": 3,
+      "price": "3.99",
+      "description": "40% OFF TIME MYSTERIES 3 IN LIMITED TIME OFFER!",
+      "pub_date": "2016-02-22T10:09:40.889Z",
+      "image_url": "https://lh3.ggpht.com/yd7cr2X8NRpubyvF1cUse_dmDShzSq9JIDLr75aZaPvIB7tzuwlxGaq0CBlpmrqMigg=h900-rw",
+      "thumbnail_url": "https://lh3.googleusercontent.com/i5XdEiMqZfQUCxoj-SHEdgL7MNnZ5w9kK6LrTIvIKPt6PpY9n2E1hMs7i2YnHnhvGg=w300-rw",
+      "game_url": "https://lh3.ggpht.com/yd7cr2X8NRpubyvF1cUse_dmDShzSq9JIDLr75aZaPvIB7tzuwlxGaq0CBlpmrqMigg=h900-rw",
+      "likes": 4,
+      "players": [],
+      "genres": [
+        3,
+        8
+      ],
+      "labels": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 7,
+    "fields": {
+      "title": "Snooker Challenges",
+      "code": "007",
+      "game_developer": 3,
+      "price": "4.59",
+      "description": "Using the critically acclaimed International Snooker Pro engine, Challenges gives the player 108 bite sized mini-games. Everything from a single shot to historic moments in world snooker. Remember the 1985 \u2018black ball\u2019 final or Jimmy White coming so close to being world champion in 1994?",
+      "pub_date": "2016-02-22T10:42:39.993Z",
+      "image_url": "https://lh3.googleusercontent.com/d5ERSlA3aV8Y1x3N4RlHGD62Z1JcQpk8UQcTJhWWPY2EPJmMw0fWFOY6_foX2ZAxDjM=h900-rw",
+      "thumbnail_url": "https://lh3.googleusercontent.com/JnMJjunOiXBeml457emmp4mO_v0PIg0Y1vfcRiCgE8_OS5vJcRtOgT9usHB7_lvTjw=w300-rw",
+      "game_url": "https://lh3.googleusercontent.com/d5ERSlA3aV8Y1x3N4RlHGD62Z1JcQpk8UQcTJhWWPY2EPJmMw0fWFOY6_foX2ZAxDjM=h900-rw",
+      "likes": 9,
+      "players": [],
+      "genres": [
+        5,
+        6
+      ],
+      "labels": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 8,
+    "fields": {
+      "title": "Click the Circles",
+      "code": "008",
+      "game_developer": 30,
+      "price": "1.99",
+      "description": "Test how quick and accurate you can click the circles ;)",
+      "pub_date": "2016-03-11T19:22:28.663Z",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ54uXJpqQ6ja-cQt0Gjyuzm-4o8iU9NRVuQM0H00_6YUJakbt",
+      "thumbnail_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ54uXJpqQ6ja-cQt0Gjyuzm-4o8iU9NRVuQM0H00_6YUJakbt",
+      "game_url": "http://codetaha.github.io/jsgames/",
+      "likes": 99,
+      "players": [
+        31,
+        32
+      ],
+      "genres": [
+        1
+      ],
+      "labels": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 9,
+    "fields": {
+      "title": "OverJump",
+      "code": "009",
+      "game_developer": 30,
+      "price": "2.05",
+      "description": "Hardcore arcade game about a jumping soap and rubber ducks",
+      "pub_date": "2016-03-11T19:24:12.432Z",
+      "image_url": "https://lh3.googleusercontent.com/qvvy11Xy7rwtsqIhifpf5pcXRvLX4nDObLAGgNinz2C6QUOPTvoGshktobBz3JDK8H0=h900-rw",
+      "thumbnail_url": "https://lh3.googleusercontent.com/NMSHRY6qy07DUZsRyYjI6ExvoFf3DX7O_R0JmrUXayr7giBYJJ2zjbTgShq-5bo-Gw=w300-rw",
+      "game_url": "https://lh3.googleusercontent.com/qvvy11Xy7rwtsqIhifpf5pcXRvLX4nDObLAGgNinz2C6QUOPTvoGshktobBz3JDK8H0=h900-rw",
+      "likes": 12,
+      "players": [],
+      "genres": [
+        1,
+        7
+      ],
+      "labels": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 10,
+    "fields": {
+      "title": "Charlie and Lola: I've Won!",
+      "code": "010",
+      "game_developer": 4,
+      "price": "1.90",
+      "description": "he multiple BAFTA Award Winning Charlie and Lola are back!\r\n\r\nThis is the second extremely special and completely official BBC Charlie and Lola App! Safe, trusted, ad-free fun for your pre-school little ones. Free from in-app purchases.",
+      "pub_date": "2016-03-11T19:26:59.342Z",
+      "image_url": "https://lh3.googleusercontent.com/48PO5ngYyDBEeumf3cvamueJabU2fH_Zg5xWC9IazjIpuFoidQfKO071PtgJbcgzDGI=h900-rw",
+      "thumbnail_url": "https://lh3.googleusercontent.com/ZO0XGZA2-B3rCtyDiwG3CYX4BnxdAXxsHnfzJbBZ53-xp_8SrSPo41GLoQ-hdJxKIA=w300-rw",
+      "game_url": "https://lh3.googleusercontent.com/48PO5ngYyDBEeumf3cvamueJabU2fH_Zg5xWC9IazjIpuFoidQfKO071PtgJbcgzDGI=h900-rw",
+      "likes": 1,
+      "players": [],
+      "genres": [
+        3,
+        6
+      ],
+      "labels": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 11,
+    "fields": {
+      "title": "PRiMATEYS!",
+      "code": "011",
+      "game_developer": 2,
+      "price": "3.50",
+      "description": "Primatey: Ship Outta Luck! is best described as The Oregon Trail meets Drugwars in this high seas monkey adventure! \r\nThis is a rogue-light resource trading tycoon game set in a world of monkey pirates. Sail into port, purchase goods, upgrade your ship, and be sure to pay off your loans to make as much money as you can before time runs out. However, your adventure really begins at sea!",
+      "pub_date": "2016-03-11T19:40:29.652Z",
+      "image_url": "https://lh3.googleusercontent.com/sIE1Cp4UAbYWlT7jiz9Teest8jmetZRqRjPgp-iYJoIrrCrhMUHTSPN4ZA7JeaHWCbc=h900-rw",
+      "thumbnail_url": "https://lh3.googleusercontent.com/xFKH2tZI2HgOI-U8vtwGdszVvbJMidzCOZYC2b2k2yv-MJWP4ruRrBlB8E-MNzhVmQ=w300-rw",
+      "game_url": "https://lh3.googleusercontent.com/Rc_1bzr2gS3sxJDniIDI9VJbdO4z9IhqtJcW0zx-mPGhgBNnZrdCLXeCG2M9Gg1ixcN-=h900-rw",
+      "likes": 5,
+      "players": [],
+      "genres": [
+        1,
+        6
+      ],
+      "labels": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 12,
+    "fields": {
+      "title": "Fantasy Mosaics 14",
+      "code": "012",
+      "game_developer": 3,
+      "price": "3.79",
+      "description": "Our penguin family just discovered the fourth color for our mosaic puzzles! Along the way, they brought a new palette of colors to choose from as well!\r\nNow it's up to you to experience the colorful puzzles and meet new inhabitants in the penguin world.",
+      "pub_date": "2016-03-11T19:45:02.800Z",
+      "image_url": "https://lh3.googleusercontent.com/2vHl2KPmRMKbL4zE4krQ1JdaQdvy_d23V_TDll3fUwWAwPCRVqXayZxIQALG-f_GT6_U=h900-rw",
+      "thumbnail_url": "https://lh3.googleusercontent.com/EnNMIOQSfCaD84HqPhULF78MiYZzrM_zO_2vYGhXLcoV6ko3JoUGYUfXI4zmcrvyFqpR=w300-rw",
+      "game_url": "https://lh3.googleusercontent.com/OpGr4kP1HQ6-OWS-YDYgotTClgn3wBYiuYDrVK9b7rtgRqqnUYrsFX6Bsu6gKG1RIyc=h900-rw",
+      "likes": 8,
+      "players": [],
+      "genres": [
+        6
+      ],
+      "labels": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 13,
+    "fields": {
+      "title": "Fox and Dog",
+      "code": "013",
+      "game_developer": 30,
+      "price": "1.89",
+      "description": "Fox and dog!",
+      "pub_date": "2016-03-11T20:01:19.336Z",
+      "image_url": "http://images.clipartpanda.com/fox-clip-art-large.png",
+      "thumbnail_url": "http://images.clipartpanda.com/fox-clip-art-large.png",
+      "game_url": "http://www.lutanho.net/play/foxanddogs.html",
+      "likes": 2,
+      "players": [],
+      "genres": [
+        6
+      ],
+      "labels": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 14,
+    "fields": {
+      "title": "Threefit",
+      "code": "014",
+      "game_developer": 4,
+      "price": "1.89",
+      "description": "Tetris with juggling balls",
+      "pub_date": "2016-03-11T20:04:35.701Z",
+      "image_url": "http://www.renegadejuggling.com/mc_images/product/detail/Play-MMX-Filled-Stage-Juggling-Ball.jpg",
+      "thumbnail_url": "http://www.renegadejuggling.com/mc_images/product/detail/Play-MMX-Filled-Stage-Juggling-Ball.jpg",
+      "game_url": "http://www.lutanho.net/play/threefit.html",
+      "likes": 11,
+      "players": [],
+      "genres": [
+        6
+      ],
+      "labels": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.game",
+    "pk": 15,
+    "fields": {
+      "title": "Chinese Checker",
+      "code": "015",
+      "game_developer": 30,
+      "price": "1.49",
+      "description": "Chinese checkers! You can play with friends or with computer bot.",
+      "pub_date": "2016-03-11T20:07:52.485Z",
+      "image_url": "https://mostodd.files.wordpress.com/2011/02/chinese-checkers.jpg",
+      "thumbnail_url": "https://mostodd.files.wordpress.com/2011/02/chinese-checkers.jpg",
+      "game_url": "http://www.lutanho.net/play/chinesecheckers.html",
+      "likes": 10,
+      "players": [],
+      "genres": [
+        6
+      ],
+      "labels": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "awesomegames.highestscore",
+    "pk": 5,
+    "fields": {
+      "highest_score": 50,
+      "player": 31,
+      "game": 1
+    }
+  },
+  {
+    "model": "awesomegames.highestscore",
+    "pk": 6,
+    "fields": {
+      "highest_score": 6,
+      "player": 32,
+      "game": 8
+    }
+  },
+  {
+    "model": "awesomegames.payment",
+    "pk": 3,
+    "fields": {
+      "player": 31,
+      "game": 8,
+      "status": true,
+      "ref": "5983",
+      "pub_date": "2016-03-11"
+    }
+  },
+  {
+    "model": "awesomegames.payment",
+    "pk": 4,
+    "fields": {
+      "player": 31,
+      "game": 1,
+      "status": true,
+      "ref": "5984",
+      "pub_date": "2016-03-11"
+    }
+  },
+  {
+    "model": "awesomegames.payment",
+    "pk": 5,
+    "fields": {
+      "player": 31,
+      "game": 2,
+      "status": true,
+      "ref": "5985",
+      "pub_date": "2016-03-11"
+    }
+  },
+  {
+    "model": "awesomegames.payment",
+    "pk": 6,
+    "fields": {
+      "player": 32,
+      "game": 4,
+      "status": true,
+      "ref": "5986",
+      "pub_date": "2016-03-11"
+    }
+  },
+  {
+    "model": "awesomegames.payment",
+    "pk": 7,
+    "fields": {
+      "player": 32,
+      "game": 8,
+      "status": true,
+      "ref": "5987",
+      "pub_date": "2016-03-11"
+    }
+  },
+  {
+    "model": "awesomegames.gamestate",
+    "pk": 5,
+    "fields": {
+      "player": 31,
+      "game": 1,
+      "state": "{\"playerItems\":[\"A rock\",\"A rock\",\"A rock\",\"A rock\"],\"score\":0}"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$24000$19T9ZVPAXcFj$QsnJX4iI1qP7Cc2rwaqvCyLf2v0bpR6tSQ3fU46jxw4=",
+      "last_login": "2016-03-11T14:47:42Z",
+      "is_superuser": true,
+      "username": "thuyn",
+      "first_name": "thuy",
+      "last_name": "nguyen",
+      "email": "hello@thuyn.me",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2016-01-09T14:47:23Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$24000$dLzid9NNs23R$DjS/nVB2ZTI+JDQFL+lqs7pgEpI/6Ssi3LdrZIu994Q=",
+      "last_login": "2016-03-11T17:57:04.216Z",
+      "is_superuser": false,
+      "username": "ninh",
+      "first_name": "ninh",
+      "last_name": "truong",
+      "email": "test@aalto.fi",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2016-01-09T14:48:10Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$24000$n3SEnJPULlxY$wINKjQohrr0HK3q2V3bbQS5w7rKfr6Vpx/vzl//E61U=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "taha",
+      "first_name": "taha",
+      "last_name": "kachwala",
+      "email": "test2@aalto.fi",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2016-01-09T14:48:48Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 29,
+    "fields": {
+      "password": "pbkdf2_sha256$24000$onpzQQH18Flz$cCETwo348ozYZ16pXjY2eomVnFkJ2mgTdfbo1Ay5Yo0=",
+      "last_login": "2016-03-11T20:22:35.823Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2016-03-11T14:48:08Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 30,
+    "fields": {
+      "password": "pbkdf2_sha256$24000$VhcUkKnlkCm4$uV6iXT6A3BUbPJG8AksUvit3adBtQ3TOnSP3/xdPbV0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anantha",
+      "first_name": "Anantha",
+      "last_name": "K.",
+      "email": "anantha@aalto.fi",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2016-03-11T14:48:37Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 31,
+    "fields": {
+      "password": "pbkdf2_sha256$24000$nd6xgXDZzTQR$3UfG99XVv63ilVuvpPu+IqEAWw9Se+8Uo54HbIP6eyo=",
+      "last_login": "2016-03-11T20:12:30.438Z",
+      "is_superuser": false,
+      "username": "player1",
+      "first_name": "Player1",
+      "last_name": "Test",
+      "email": "player1@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2016-03-11T14:50:02Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 32,
+    "fields": {
+      "password": "pbkdf2_sha256$24000$cHALImJQOflW$HqM+fec8TITXlnYI72mYU0l7769iSG0fqvAVzxT+jE0=",
+      "last_login": "2016-03-11T20:17:54.234Z",
+      "is_superuser": false,
+      "username": "player2",
+      "first_name": "Player2",
+      "last_name": "Test",
+      "email": "player2@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2016-03-11T14:50:41Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 33,
+    "fields": {
+      "password": "pbkdf2_sha256$24000$POOxwDzLTf0i$HQEV6u8scI3dyS3GSaCZBa3Ab2BZYGAu1qcf3LZgAtc=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "player3",
+      "first_name": "Player3",
+      "last_name": "Test",
+      "email": "player3@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2016-03-11T14:51:09Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 34,
+    "fields": {
+      "password": "pbkdf2_sha256$24000$blbKLkmja0UK$yy/UXUgw3asLRjXRGnSj2Q4CpbUEgk9aAfAkM6SwlzE=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "inactive_test",
+      "first_name": "Inactive",
+      "last_name": "Test",
+      "email": "inactive@example.com",
+      "is_staff": false,
+      "is_active": false,
+      "date_joined": "2016-03-11T14:51:38Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "awesomegames.developer",
+    "pk": 2,
+    "fields": {
+      "likes": 10,
+      "activation_key": "12345678QWERTY",
+      "profile_image": "https://scontent-arn2-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/12549023_10153888680578234_3226546117216125475_n.jpg?oh=1e941105cfdc2c103b0264001a8ac900&oe=57957B58"
+    }
+  },
+  {
+    "model": "awesomegames.developer",
+    "pk": 3,
+    "fields": {
+      "likes": 7,
+      "activation_key": "12345678QWERTY",
+      "profile_image": "https://scontent-arn2-1.xx.fbcdn.net/hphotos-xpa1/t31.0-8/920625_10153751175189303_5716922865725355083_o.jpg"
+    }
+  },
+  {
+    "model": "awesomegames.developer",
+    "pk": 4,
+    "fields": {
+      "likes": 5,
+      "activation_key": "12345678QWERTY",
+      "profile_image": "https://scontent-arn2-1.xx.fbcdn.net/hphotos-xpf1/t31.0-8/12273777_10156273704775422_8109293251557327205_o.jpg"
+    }
+  },
+  {
+    "model": "awesomegames.developer",
+    "pk": 30,
+    "fields": {
+      "likes": 0,
+      "activation_key": "12345678QWERTY",
+      "profile_image": "https://scontent-arn2-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/1534713_10202950294538543_655273789_o.jpg"
+    }
+  },
+  {
+    "model": "awesomegames.player",
+    "pk": 31,
+    "fields": {
+      "activation_key": "12345678QWERTY",
+      "profile_image": "http://skagitcitytruckschool.com/wp-content/uploads/2013/05/Facebook_Face_by_beardedboywonder.jpg"
+    }
+  },
+  {
+    "model": "awesomegames.player",
+    "pk": 32,
+    "fields": {
+      "activation_key": "12345678QWERTY",
+      "profile_image": "http://skagitcitytruckschool.com/wp-content/uploads/2013/05/Facebook_Face_by_beardedboywonder.jpg"
+    }
+  },
+  {
+    "model": "awesomegames.player",
+    "pk": 33,
+    "fields": {
+      "activation_key": "12345678QWERTY",
+      "profile_image": "http://skagitcitytruckschool.com/wp-content/uploads/2013/05/Facebook_Face_by_beardedboywonder.jpg"
+    }
+  },
+  {
+    "model": "awesomegames.player",
+    "pk": 34,
+    "fields": {
+      "activation_key": "12345678QWERTY",
+      "profile_image": "http://skagitcitytruckschool.com/wp-content/uploads/2013/05/Facebook_Face_by_beardedboywonder.jpg"
+    }
+  }
+]

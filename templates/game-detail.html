@@ -1,0 +1,88 @@
+{% extends "layouts/three-cols.html" %}
+{% load staticfiles %}
+
+{% block scope-lib %}
+    <script src="{% static "js/home.js" %}"></script>
+    <script src="{% static "js/game-detail.js" %}"></script>
+    <script src="{% static "js/vendor/d3/d3.js" %}"></script>
+    <script src="{% static "js/vendor/c3/c3.js" %}"></script>
+    <script>
+        var gameId = window.location.pathname.split('/').pop();
+        var csrf = "{{csrf_token}}";
+    </script>
+    <script src="{% static "js/common.js" %}"></script>
+    <script src="{% static "js/vendor/facebook.js" %}"></script>
+{% endblock %}
+
+{% block left-sidebar %}
+    <div class="hidden-xs">
+        <div class="panel panel-awe panel-game text-center">
+            <h3><img class="game-cover-thumb" id="thumbnail" src=""></h3>
+            <h3><span id="price"></span></h3>
+            <button id="btnBuy" class="btn btn-lg btn-awe center-block">Buy now</button>
+        </div>
+        <div class="panel panel-awe panel-game text-center">
+            <div class="fb-share-button" data-href="http://awesome-wsd.herokuapp.com/" data-layout="button_count"></div>
+        </div>
+        <div class="panel panel-awe panel-game">
+            <h3>Genres</h3>
+            <hr>
+            <div id="genreList"></div>
+        </div>
+        <div class="panel panel-awe panel-game">
+            <h3>Labels</h3>
+            <hr>
+            <div id="labelList"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block right-sidebar %}
+    <div class="panel panel-awe panel-game">
+        <h3>Highscore: <span id="my_highscore"></span></h3>
+        <hr>
+    </div>
+    <div class="panel panel-awe panel-game">
+        <h3>Players</h3>
+        <hr>
+        <ol id="highscores">
+        </ol>
+    </div>
+    <div class="panel panel-awe panel-game">
+        <h3>Related games</h3>
+        <hr>
+        <div class="game-related">
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="game-header">
+        <h1 id="title"></h1>
+        <h4 class="developer">
+            By <span id="developer"></span> |
+            Released <span id="releasedDate"></span>
+        </h4>
+        <div class="clearfix"></div>
+        <hr>
+    </div>
+
+    <div class="panel panel-awe panel-screen" id="mainArea">
+        <iframe width="auto" height="auto" scrolling="yes" id="gameScreen"></iframe>
+        <img id="gamePlaceholder" src=""/>
+    </div>
+
+    <div id="message-wrap" class="panel panel-awe panel-screen">
+        <div class="message"></div>
+    </div>
+
+    <form action="{% url 'save_score' %}" method="post" id="save_score_form">
+        {% csrf_token %}
+    </form>
+
+    <div class="panel panel-awe panel-game">
+        <h3>Description</h3>
+        <hr>
+        <p id="description"></p>
+    </div>
+{% endblock %}

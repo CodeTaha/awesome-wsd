@@ -1,0 +1,23 @@
+[
+{
+    "model": "awesomegames.developer",
+    "pk": 2,
+    "fields": {
+        "likes": 10
+    }
+},
+{
+    "model": "awesomegames.developer",
+    "pk": 3,
+    "fields": {
+        "likes": 7
+    }
+},
+{
+    "model": "awesomegames.developer",
+    "pk": 4,
+    "fields": {
+        "likes": 5
+    }
+}
+]
